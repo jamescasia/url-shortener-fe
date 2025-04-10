@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+  
+  .form-container input,
+  .form-container button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* URL List Styles */
+  .url-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .url-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .url-item span {
+    word-wrap: break-word;
+    max-width: 350px;
+    color: #3498db;
+  }
+  
+  .url-item a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .url-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .form-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .url-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.25rem;
+    }
+  
+    .url-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .url-item span {
+      margin-bottom: 5px;
+    }
+  
+    .url-list {
+      margin-top: 20px;
+    }
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f0ff;
+    height: 100%;
+  }
+  
+  .app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+.wave-background {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #b3d9ff, #e0f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh; /* ⬅️ This is key */
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
