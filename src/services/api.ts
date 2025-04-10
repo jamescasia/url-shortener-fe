@@ -1,8 +1,8 @@
 import axios from "axios";
 
-if (!process.env.NEXT_PUBLIC_API_BASE_URL) {
-  throw new Error("Missing NEXT_PUBLIC_API_BASE_URL in environment variables");
-}
+// if (!process.env.NEXT_PUBLIC_API_BASE_URL) {
+//   throw new Error("Missing NEXT_PUBLIC_API_BASE_URL in environment variables");
+// }
 
 export const API_URL = 'https://urlly.jamescasia.com';
 export const shortenUrl = async (originalUrl: string): Promise<any> => {
